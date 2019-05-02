@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+class apples{
+    public static void main(String args[]){
+
+        int var = 30;
+	System.out.println( var>20 ? "more than 20" : "less than 20");
+    
+    }
+}
