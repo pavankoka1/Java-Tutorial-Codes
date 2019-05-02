@@ -1,0 +1,16 @@
+class apples{
+    public static void main(String args[]){
+
+        tuna obj = new tuna();
+	String s;
+	s = "koka";
+        obj.Func(s);
+    
+    }
+}
+
+public class tuna {
+    public void Func(String s){
+        System.out.println("Hey " + s);
+    }
+}
