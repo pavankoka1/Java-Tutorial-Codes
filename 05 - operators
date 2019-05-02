@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+class koka{
+	
+    public static void main(String args[]){
+    	
+    	int a,b;
+        Scanner koka = new Scanner(System.in);
+        a = koka.nextInt();
+        b = koka.nextInt();
+        System.out.println(a++);
+        System.out.println(a);
+        System.out.println(++a);
+        
+    }
+}
