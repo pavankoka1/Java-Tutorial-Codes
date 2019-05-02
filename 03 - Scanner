@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+class apples{
+    public static void main(String args[]){
+    	
+        Scanner koka = new Scanner(System.in);
+        double a,b,c;
+        a = koka.nextDouble();
+        b = koka.nextDouble();
+        c = a + b;
+        System.out.println(c);
+        
+    }
+}
