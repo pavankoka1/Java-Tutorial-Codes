@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class apples{
+    public static void main(String args[]){
+
+        tuna obj = new tuna();
+	obj.setName("A");
+	obj.sayName();
+    
+    }
+}
+
+public class tuna {
+
+    private String name;
+    public void setName(String s){
+        name = s;
+    }
+
+    public String getName(){
+	return name;
+    }
+    
+    public void sayName(){
+	System.out.println("her name starts with " + getName());	
+    }
+
+}
