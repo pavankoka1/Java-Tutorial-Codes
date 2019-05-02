@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+class koka{
+	
+    public static void main(String args[]){
+    	
+    	int var = 4;
+    	while(var>0){
+    		System.out.println("loop is running on " + var);
+    		--var;
+    	}
+    }
+}
