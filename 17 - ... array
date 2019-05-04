@@ -1,0 +1,13 @@
+class apples{
+    public static void main(String args[]){
+	System.out.println(avg(1,2,3,4,5));
+	
+    }
+
+	public static int avg(int ...num){
+		int ans = 0;
+		for(int i:num)
+			ans+=i;
+		return ans/num.length;	
+	}
+}
