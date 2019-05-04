@@ -1,0 +1,22 @@
+class apples{
+    public static void main(String args[]){
+	tuna obj = new tuna(4,5,2019);
+    }
+}
+
+public class tuna{
+
+	private int day,month,year;
+	
+	public tuna(int d,int m,int y){
+		day = d;
+		month = m;
+		year = y;
+
+		System.out.printf("Date is %s", this);
+	}
+
+	public String toString(){
+		return String.format("%d/%d/%d", day, month, year);
+	}
+}
