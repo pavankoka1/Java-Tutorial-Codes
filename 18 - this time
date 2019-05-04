@@ -1,0 +1,33 @@
+class apples{
+    public static void main(String args[]){
+	tuna obj = new tuna();
+	System.out.println(obj.toMilitary());
+	System.out.println(obj.toString());
+
+	obj.setTime(13,27,6);
+	System.out.println(obj.toMilitary());
+	System.out.println(obj.toString());
+	
+    }
+}
+
+public class tuna {
+
+    private int hour,min,sec;
+	
+	public void setTime(int hour,int min,int sec){
+		this.hour = ((hour>=0 && hour<24)? hour : 0);
+		this.min = ((min>=0 && min<60)? min : 0);
+		this.sec = ((sec>=0 && sec<60)? sec : 0);
+	}
+
+	public String toMilitary(){
+		return String.format("%02d:%02d:%02d",hour,min,sec);
+	}
+	
+	public String toString(){
+		return String.format("%02d:%02d:%02d %s",((hour==0 || hour==12)? 12 : hour%12),min,sec, ((hour<12)? "AM" : "PM"));
+	}
+}
+
+// this.var will point d access to private while (var) would look after variables within function
