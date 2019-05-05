@@ -1,0 +1,37 @@
+import java.util.EnumSet;
+
+class apples{
+    public static void main(String args[]){
+	for(tuna ppl: tuna.values())
+		System.out.printf("%s\t%s\t%s\n",ppl,ppl.getDesc(),ppl.getYr());
+
+	System.out.println("and now for range of constants!!");
+
+	for(tuna ppl: EnumSet.range(tuna.kelsey, tuna.candy))
+		System.out.printf("%s\t%s\t%s\n",ppl, ppl.getDesc(),ppl.getYr());
+    }
+}
+
+public enum tuna{
+		bucky("nice","22"),
+		kelsey("cutie","10"),
+		julia("big-mistake","12"),
+		nicole("italian","13"),
+		candy("different","14"),
+		erin("iwish","15");
+
+		private final String desc, yr;
+
+		tuna(String desc, String yr){
+			this.desc = desc;
+			this.yr = yr;
+		}
+
+		public String getDesc(){
+			return desc;
+		}
+
+		public String getYr(){
+			return yr;
+		}
+	}
