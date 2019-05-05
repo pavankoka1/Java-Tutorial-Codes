@@ -1,0 +1,22 @@
+class apples{
+    public static void main(String args[]){
+	tuna m1 = new tuna("Megan", "Fox");
+	tuna m2 = new tuna("Natalie", "Portman");
+	tuna m3 = new tuna("Taylor", "Swift");
+    }
+
+}
+
+public class tuna {
+	private String frst,lst;
+	private static int mem = 0;
+
+	public tuna(String frst, String lst){
+		this.frst = frst;
+		this.lst = lst;
+		mem++;
+		System.out.println( frst + " " + lst + " " + mem);
+	}
+}
+
+//whenever we declare static, it is shared amony all the instances!
