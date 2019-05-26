@@ -1,0 +1,28 @@
+class apples{
+    public static void main(String args[]){
+	tuna tunaObject = new tuna(10);
+	
+	for(int i=0;i<10;i++){
+		tunaObject.add();
+		System.out.println(tunaObject);
+	}
+    }
+}
+
+public class tuna {
+	private int sum;
+	private final int num;
+
+	public tuna(int x){
+		num = x;
+	}
+
+	public void add(){
+		sum += num;
+	}
+
+	public String toString(){
+		return String.format("sum = %d \n",sum);
+	}
+  
+}
