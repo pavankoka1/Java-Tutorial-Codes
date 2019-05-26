@@ -1,0 +1,27 @@
+class apples{
+    public static void main(String args[]){
+
+	tuna tunaObject = new tuna();
+	potpie potpieObject = new potpie();
+
+	tunaObject.eat();
+	potpieObject.eat();
+	
+    }
+}
+
+public class tuna extends food{
+	public void eat(){
+		System.out.println("new method");
+	}
+}
+
+public class potpie extends food{
+    
+}
+
+public class food{
+    public void eat(){
+        System.out.println("inherited method");
+    }
+}
